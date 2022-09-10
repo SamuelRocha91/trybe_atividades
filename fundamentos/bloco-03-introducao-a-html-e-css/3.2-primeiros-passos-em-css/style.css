@@ -1,0 +1,31 @@
+
+        #unico{
+
+            font-weight: 600;
+            font-size: 3em;
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            text-align: center;
+            font-family: monospace;
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            text-align: center;
+            font-size: 16px;
+            text-align: left;
+        }
+        #yel{
+            background-color: yellow;
+        }
+        #bro{
+            background-color: brown;
+        }
+        #red{
+            background-color:red;
+        }
+        #p2{
+            font-style: italic;
+            line-height: 30px;
+        }
