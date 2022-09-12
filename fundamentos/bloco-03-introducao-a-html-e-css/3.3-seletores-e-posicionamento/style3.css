@@ -1,0 +1,11 @@
+
+h1,p{
+    text-align: center;
+}
+li:hover{
+    background-color: aqua;
+    transition: 4s;
+}
+li:active{
+    font-family: monospace;
+}
