@@ -9,3 +9,9 @@ const birthCity = "Salvador";
 // Crie uma variável chamada birthYear e atribua a ela o ano em que você nasceu.
 
 let birthYear = 1991;
+
+// Utilize o console.log() para imprimir as constantes e variáveis que você criou.
+
+console.log(myName);
+console.log(birthYear);
+console.log(birthCity);
