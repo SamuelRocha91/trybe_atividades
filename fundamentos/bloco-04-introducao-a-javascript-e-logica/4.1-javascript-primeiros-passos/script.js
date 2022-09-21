@@ -15,3 +15,8 @@ let birthYear = 1991;
 console.log(myName);
 console.log(birthYear);
 console.log(birthCity);
+
+// Altere o valor atribuído à variável birthYear para 2030. Faça um console.log(birthYear) novamente para ver o que acontece!
+
+birthYear = 2005;
+console.log(birthYear)
