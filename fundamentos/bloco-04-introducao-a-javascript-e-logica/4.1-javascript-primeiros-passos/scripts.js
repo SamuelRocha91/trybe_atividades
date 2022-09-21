@@ -48,17 +48,22 @@ const nota = 60;
   else{
     console.log("Você foi reprovado(a)!")
   }
-  // Altere o valor da nota para verificar se as condições que você implementou funcionam.
-  
-  nota = 70;
 
-  if(nota >=80){
-    console.log("Parabéns, você foi aprovado(a)!")
-  }
-  else if(nota < 80 && nota >= 60){
-    console.log("Você está na nossa lista de espera")
-  }
-  else{
-    console.log("Você foi reprovado(a)!")
-  }
-  // Dá erro pelo identificador 'nota' ser uma constante.
+
+
+    // Crie uma variável para armazenar o status da pessoa candidata no processo seletivo, que pode ser: 'aprovada', 'lista' ou 'reprovada'; Crie uma estrutura condicional com o switch/case que irá imprimir as seguintes mensagens: Caso 'aprovada', imprima “Parabéns, você foi aprovada(o)!”. Caso 'lista', imprima “Você está na nossa lista de espera”. Caso 'reprovada', imprima “Você foi reprovada(o)”. Caso default, imprima a mensagem de “Informação incorreta”.
+
+    let statusConcurso = "aprovada";
+    switch (statusConcurso){
+      case "aprovada":
+        console.log("Parabéns, você foi aprovado(a)!")
+        break;
+      case "lista":
+        console.log("Você está em nossa lista de espera!")
+        break
+      case "reprovada":
+        console.log("Você foi reprovado(a)")
+        break
+      default:
+        console.log("informação incorreta")
+    }
