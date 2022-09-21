@@ -1,3 +1,7 @@
 // Crie uma constante chamada myName e atribua a ela o seu nome (Exemplo: Carolina).
 
-const myName = Samuel;
+const myName = "Samuel";
+
+// Crie uma constante chamada birthCity e atribua a ela a sua cidade natal.
+
+const birthCity = "Salvador";
