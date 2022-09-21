@@ -20,3 +20,10 @@ console.log(birthCity);
 
 birthYear = 2005;
 console.log(birthYear)
+
+// Altere o valor atribuído à constante birthCity. Faça um console.log(birthCity) novamente! Você saberia explicar por que recebemos uma mensagem de erro?
+
+birthCity = "Rio de Janeiro";
+console.log(birthCity)
+
+// erro devido à natureza das constantes que, opostamente às varáveis, não possuem natureza mutável.
