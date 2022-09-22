@@ -14,3 +14,17 @@ let intermediario = 0;
     }
   }
   console.log(numbers)
+
+  // Ordene o array numbers em ordem decrescente e imprima seus valores
+
+  for(let index = 0; index < (numbers.length - 1) ; index = index + 1){
+
+    for(let contador = index + 1; contador < numbers.length; contador = contador + 1){
+      if(numbers[index] < numbers[contador]){
+        intermediario = numbers[index];
+        numbers[index] = numbers[contador];
+        numbers[contador] = intermediario;
+      }
+    }
+  }
+  console.log(numbers)
