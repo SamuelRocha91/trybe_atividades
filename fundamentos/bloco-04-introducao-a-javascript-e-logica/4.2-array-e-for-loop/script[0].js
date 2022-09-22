@@ -69,3 +69,9 @@ for(let index = 1; index <=25; index = index + 1){
   array.push(index)
 }
 console.log(array)
+
+// Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2
+
+for(let divisao of array){
+  console.log(divisao/2)
+}
