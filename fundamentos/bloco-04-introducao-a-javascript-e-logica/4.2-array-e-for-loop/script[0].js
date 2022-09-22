@@ -12,3 +12,8 @@ for(let index = 0; index < numbers.length; index = index + 1){
   soma = soma + numbers[index]
 }
 console.log(`A soma dos elementos do array numbers é igual a ${soma}`)
+
+//Calcule e imprima a média aritmética dos valores contidos no array;
+
+media = soma / numbers.length
+console.log(`A média aritmética do array numbers é igual a ${media}`)
