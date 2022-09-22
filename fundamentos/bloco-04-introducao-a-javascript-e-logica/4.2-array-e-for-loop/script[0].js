@@ -51,3 +51,13 @@ if(somaDeImpares === 0){
 else{
   console.log(`Existem ${somaDeImpares} valores ímpares no array numbers`)
 }
+
+// Utilizando for, descubra qual o menor valor contido no array e imprima-o
+
+let menor = numbers[0];
+for(let index = 0; index < numbers.length; index = index + 1){
+  if(numbers[index] < menor){
+    menor = numbers[index]
+  }
+}
+console.log(`O menor número no array numbers é ${menor}`)
