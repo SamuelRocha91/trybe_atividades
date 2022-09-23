@@ -42,3 +42,23 @@ for(let index = 0; index < array.length; index = index + 1){
   }
 }
 console.log (`A menor palavra no Array é ${menorP}`)
+
+// Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.
+
+let maiorPrimo;
+let numInicial = 2;
+let numFinal = 50;
+
+
+for(let index = numInicial; index <= numFinal; index = index + 1){
+     let qtdadeDivisores = 1;
+    for( let contador = numInicial; contador <= index; contador = contador +1){
+      if(index % contador === 0){
+        qtdadeDivisores = qtdadeDivisores + 1;
+      }
+    }
+    if (qtdadeDivisores === 2){
+        maiorPrimo = index
+    }
+}
+console.log(maiorPrimo)
