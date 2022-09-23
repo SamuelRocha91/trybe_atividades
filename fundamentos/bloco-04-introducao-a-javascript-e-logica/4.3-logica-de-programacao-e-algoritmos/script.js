@@ -33,3 +33,12 @@ for(let index = 0; index < array.length; index= index + 1){
   }
 }
 console.log(`A maior palavra do Array é ${maiorP}`)
+
+let menorP = array[0];
+
+for(let index = 0; index < array.length; index = index + 1){
+  if(menorP.length > array[index].length){
+    menorP = array[index]
+  }
+}
+console.log (`A menor palavra no Array é ${menorP}`)
