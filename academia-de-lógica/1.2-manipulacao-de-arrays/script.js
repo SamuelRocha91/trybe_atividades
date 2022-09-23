@@ -24,3 +24,24 @@ if(existed === true){
 else{
   console.log(`Elemento não encontrado no array`)
 }
+
+/* 2. Retorne os números ímpares
+A Dora aventureira gostaria de ter uma lista com todos o números ímpares entre 1 e 50.
+
+Escreva um algoritmo que imprima no terminal uma string com todos os números inteiros ímpares desse intervalo.
+
+Use a seguinte estrutura na impressão:
+
+"x, y, z, ...n" */
+
+let listimpar = [];
+for(let index = 1; index <= 50; index = index + 1){
+  if(index % 2 === 1){
+    listimpar.push(index)
+  }
+}
+let string = listimpar[0];
+for(let index = 1; index < listimpar.length; index = index + 1){
+   string = string + ", " + listimpar[index];
+}
+console.log(string)
