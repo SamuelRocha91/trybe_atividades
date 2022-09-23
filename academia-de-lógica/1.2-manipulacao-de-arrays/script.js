@@ -45,3 +45,32 @@ for(let index = 1; index < listimpar.length; index = index + 1){
    string = string + ", " + listimpar[index];
 }
 console.log(string)
+
+/* Escreva um algoritmo que cria uma sequência numérica de inteiros com intervalo de 1 entre eles. O algoritmo deve receber antes de criar essa sequência, o valor inicial e final.
+
+Conte os números divisíveis por 3 da sequência e imprima no terminal condicionando:
+
+Se houver 50 ou mais:
+
+"Há 50 ou mais números divisíveis por 3"
+
+Caso o contrário: "Sequência muito pequena." */
+
+let valueI = 1;
+let valueF = 300;
+let arrayNum = [];
+for(let index = valueI; index <= valueF; index = index +1){
+  arrayNum.push(index);
+}
+let diviPor3 = 0;
+for(let index = 0; index < arrayNum.length; index = index + 1){
+  if(arrayNum[index] % 3 === 0){
+    diviPor3 = diviPor3 + 1
+  }
+}
+if(diviPor3 >= 50){
+  console.log("Há 50 números ou mais divisíveis por 3")
+}
+else{
+  console.log("sequência muito pequena")
+}
