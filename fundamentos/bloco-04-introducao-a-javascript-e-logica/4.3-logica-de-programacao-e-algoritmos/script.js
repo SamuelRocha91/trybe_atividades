@@ -50,7 +50,7 @@ let numInicial = 2;
 let numFinal = 50;
 
 
-for(let index = numInicial; index <= numFinal; index = index + 1){
+for(let index = numInicial; index <= numFinal; index = index+ 1){
      let qtdadeDivisores = 1;
     for( let contador = numInicial; contador <= index; contador = contador +1){
       if(index % contador === 0){
