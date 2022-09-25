@@ -30,7 +30,12 @@ for(let index = 0; index < basket.length; index = index +1){
   }
   fruits[basket[index]] = soma;
 }
-console.log(`Sua cesta posui: `)
+let termosDaMensagem =[];
 for(let index in fruits){
-  console.log(`${fruits[index]} ${index}s,`)
+  let mensagem = `${fruits[index]} ${index}`
+  if(fruits[index] > 1){
+    mensagem = mensagem + 's';
+  }
+  termosDaMensagem.push(mensagem)
 }
+console.log(`Sua cesta possui: ${termosDaMensagem.join(",")}.`)
