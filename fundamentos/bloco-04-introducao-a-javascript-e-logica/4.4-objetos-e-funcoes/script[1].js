@@ -63,3 +63,29 @@ function maiorNome(array){
 }
 
 console.log(maiorNome(teste3))
+
+/* Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete */
+
+let teste4 = [2, 3, 2, 5, 8, 2, 3];
+let objeto =[];
+function inteiroMaisRepetido(array){
+for(let index = 0; index < array.length; index = index +1){
+  let sum = 0;
+  for(let index2 = 0; index2 < array.length; index2 = index2 + 1){
+    if(array[index] === array[index2]){
+       sum = sum + 1;
+    }
+  }
+  objeto[array[index]] = sum;
+}
+
+let maisRepetido = 0;
+for(let index = 0; index < objeto.length; index = index + 1){
+  if(objeto[index] > maisRepetido){
+    maisRepetido = index;
+  }
+}
+return maisRepetido
+}
+
+console.log(inteiroMaisRepetido(teste4))
