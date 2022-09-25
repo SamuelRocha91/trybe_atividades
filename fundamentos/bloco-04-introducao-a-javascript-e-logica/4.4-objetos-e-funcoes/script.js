@@ -77,3 +77,25 @@ function positivoNegativo(n){
 }
 
 console.log(positivoNegativo(a))
+
+/* Faça um programa que receba três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido, o programa deve retornar uma mensagem de erro. */
+
+let ang1 = 90;
+let ang2 = 45;
+let ang3 = 45;
+
+function trianguloValido(n1, n2, n3){
+  ladosValidos = n1 > 0 && n2 > 0 && n3 > 0;
+  if(ladosValidos === true){
+    if(n1 + n2 + n3 === 180){
+      return `True`
+    }
+    else{
+      return `False`
+    }
+  }
+  else{
+    return `Erro`
+  }
+}
+console.log(trianguloValido(ang1,ang2,ang3))
