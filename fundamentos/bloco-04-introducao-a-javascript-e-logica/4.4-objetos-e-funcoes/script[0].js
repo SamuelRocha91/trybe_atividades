@@ -12,3 +12,9 @@ console.log(`Seja bem-vida, ${info.personagem}`)
 
 info.recorrente = "sim";
 console.log(info)
+
+/* Faça um for/in que mostre todas as chaves do objeto */
+
+for(let index in info){
+  console.log(index)
+}
