@@ -119,16 +119,16 @@ function comparandoStrings(word, ending){
   }
   initEnding = word.length - ending.length;
   somaDasigualdades = 0;
-  for(let index = initEnding; index < word.length; index = index + 1){
-    if(word[index] === ending[index]){
+  for(let index = 0; index < word.length; index = index + 1){
+    if(word[index + initEnding] === ending[index]){
       somaDasigualdades = somaDasigualdades + 1
     }
   }
-    if (somaDasigualdades = ending.length){
+    if (somaDasigualdades === ending.length){
       return true
     }
     else{
-      false
+      return false
     }
   }
-  console.log(comparandoStrings("trybe", "be"))
+  console.log(comparandoStrings("fernando", "fer"))
