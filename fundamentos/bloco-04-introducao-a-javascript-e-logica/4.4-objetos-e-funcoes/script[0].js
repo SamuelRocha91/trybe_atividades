@@ -24,3 +24,20 @@ for(let index in info){
 for(let index in info){
   console.log(info[index])
 }
+
+/* Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: ‘Tio Patinhas’, ‘Christmas on Bear Mountain, Dell’s Four Color Comics #178’, ‘O último MacPatinhas’, ‘Sim’. Então, imprima os valores de cada objeto juntos, de acordo com cada uma das chaves */
+
+let info2 = {
+  personagem: "tio patinhas",
+  origem: "christmas on Bear Mountain, Dell's FOur Color COmics #178",
+  nota: "O último Macpatinhas",
+  recorrente: "sim"
+}
+for(let index in info){
+  if(info[index] !== info2[index]){
+    console.log(`${info[index]} e ${info2[index]}`)
+  }
+  else{
+    console.log(`Ambos recorrentes`)
+  }
+}
