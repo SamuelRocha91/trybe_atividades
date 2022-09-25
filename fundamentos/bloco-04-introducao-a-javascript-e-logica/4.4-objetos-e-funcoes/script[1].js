@@ -91,3 +91,21 @@ for(let index in objeto){
   }
 }
 console.log(inteiroMaisRepetido(teste4))
+
+/* Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N */
+
+let number = 33;
+
+function somaDosInteiros(n){
+  let inteirosPositivos = n > 0;
+  if(inteirosPositivos === false){
+    return erro
+  }
+  let soma = 0;
+  for(let index = 1; index <= n; index = index + 1){
+    soma = soma + index;
+  }
+  return soma
+}
+
+console.log(somaDosInteiros(33))
