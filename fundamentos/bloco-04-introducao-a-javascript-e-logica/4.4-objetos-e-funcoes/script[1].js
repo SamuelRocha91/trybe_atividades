@@ -94,7 +94,7 @@ console.log(inteiroMaisRepetido(teste4))
 
 /* Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N */
 
-let number = 33;
+
 
 function somaDosInteiros(n){
   let inteirosPositivos = n > 0;
@@ -108,4 +108,27 @@ function somaDosInteiros(n){
   return soma
 }
 
-console.log(somaDosInteiros(33))
+console.log(somaDosInteiros(5))
+
+/* Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word */
+
+function comparandoStrings(word, ending){
+  sizestrings = word.length > ending.length;
+  if(sizestrings === false){
+    return false
+  }
+  initEnding = word.length - ending.length;
+  somaDasigualdades = 0;
+  for(let index = initEnding; index < word.length; index = index + 1){
+    if(word[index] === ending[index]){
+      somaDasigualdades = somaDasigualdades + 1
+    }
+  }
+    if (somaDasigualdades = ending.length){
+      return true
+    }
+    else{
+      false
+    }
+  }
+  console.log(comparandoStrings("trybe", "be"))
