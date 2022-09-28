@@ -17,6 +17,7 @@
 
       .main-content {
         background-color: yellow;
+        
       }
 
       .main-content .center-content {
@@ -79,8 +80,17 @@
 
       corretor(h1)
 
-      /* 5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
-      6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console. */ 
+      /* 5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.*/
+
+      let pOne = document.getElementsByTagName("p")[0];
+
+      function tudoMaiusculo(tag){
+        return tag.style.textTransform = "uppercase";
+      }
+
+      tudoMaiusculo(pOne)
+
+     /* 6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console. */ 
 
     </script>
   </body>
