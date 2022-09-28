@@ -91,7 +91,15 @@
       tudoMaiusculo(pOne)
 
      /* 6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console. */ 
+      let allParagraphs = document.getElementsByTagName("p");
 
+      function imprime(tag){
+        for(let index = 0; index < tag.length; index = index + 1){
+          console.log(tag[index])
+        }
+      }
+      imprime(allParagraphs)
+      
     </script>
   </body>
 </html>
