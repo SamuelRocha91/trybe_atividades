@@ -61,7 +61,11 @@
     let body = document.body;
     let h1 = document.createElement("h1");
     h1.innerText = " Exercício - Javascript DOM";
-    body.appendChild(h1)
+    body.appendChild(h1);
+    /* Adicione a tag main com a classe main-content como filho da tag body */
+    let main = document.createElement("main");
+    main.className = "main-content";
+    body.appendChild(main)
     </script>
   </body>
 </html>
