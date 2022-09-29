@@ -94,6 +94,16 @@
   imagem.className = "small-image";
   section2.appendChild(imagem);
   
+  /* Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6 */
+  let unordered = document.createElement("ul");
+  section3.appendChild(unordered)
+  let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+  for(let value of numbers){
+    let li = document.createElement("li");
+    li.innerText = value;
+    unordered.appendChild(li)
+  }
+
 
     </script>
   </body>
