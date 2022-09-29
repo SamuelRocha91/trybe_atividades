@@ -112,6 +112,14 @@
    /* Adicione a classe title na tag h1 criada */
    h1.className = "title";
 
-    </script>
+    /* Adicione a classe description nas 3 tags h3 criadas*/
+    let brothersH3 = document.getElementsByTagName("h3")
+    function addClass(classe, elemento){
+      for(let index = 0; index < elemento.length; index += 1){
+        elemento[index].className = classe;
+      }
+   }
+    addClass("description", brothersH3)
+</script>
   </body>
 </html>
