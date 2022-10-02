@@ -127,3 +127,13 @@ sextou.addEventListener("click", function(){
 
   }
   mudaCor("red")
+
+  let divLegenda = document.querySelector(".task");
+  divLegenda.addEventListener("click", function(){
+    if(divLegenda.className === "task"){
+      divLegenda.className = "task selected"
+    }
+    else{
+      divLegenda.className = "task"
+    }
+  })
