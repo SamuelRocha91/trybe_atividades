@@ -137,3 +137,13 @@ sextou.addEventListener("click", function(){
       divLegenda.className = "task"
     }
   })
+  let logica = true;
+  lis.addEventListener("click", function(evento){
+    let reservado = evento.target
+    if(divLegenda.className === "task selected" && reservado.style.backgroundColor !== divLegenda.style.backgroundColor){
+      reservado.style.backgroundColor = divLegenda.style.backgroundColor;
+    }else{
+      reservado.style.backgroundColor = "rgb(238,238,238)"
+    }
+
+  })
