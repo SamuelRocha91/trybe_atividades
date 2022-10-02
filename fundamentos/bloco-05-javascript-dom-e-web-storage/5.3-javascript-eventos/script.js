@@ -148,7 +148,7 @@ sextou.addEventListener("click", function(){
 
   })
 
-  let compromissos = document.querySelector(".input-container");
+  let compromissos = document.querySelector(".task-list");
   let valorReal = document.getElementById("task-input")
   let input = document.getElementById("btn-add");
   input.addEventListener("click",function(evento){
@@ -156,13 +156,9 @@ sextou.addEventListener("click", function(){
       alert("ERRO")
     }
     else{
-      let span = document.createElement("span");
-      span.innerText = valorReal.value;
-      div = document.createElement("div");
-      div.className = "task";
-      div.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`
-      compromissos.appendChild(span)
-      compromissos.appendChild(div)
+      let li = document.createElement("li");
+      li.innerText = valorReal.value;
+      compromissos.appendChild(li)
     }
   })
 
