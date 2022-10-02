@@ -159,6 +159,7 @@ sextou.addEventListener("click", function(){
       let li = document.createElement("li");
       li.innerText = valorReal.value;
       compromissos.appendChild(li)
+      valorReal.value = " ";
     }
   })
 
