@@ -117,3 +117,13 @@ sextou.addEventListener("click", function(){
     tarefas.appendChild(span)
   }
   addTarefa("Cozinhar")
+
+
+  function mudaCor(string){
+    let div = document.createElement("div");
+    div.className = "task"
+    div.style.backgroundColor = string;
+    tarefas.appendChild(div) 
+
+  }
+  mudaCor("red")
