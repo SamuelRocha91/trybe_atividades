@@ -64,3 +64,11 @@ button.addEventListener("click", function(){
   click = "impar"
  }
 })
+
+function createButton2(string){
+  let button = document.createElement("button");
+  button.innerText = string;
+  button.id = "btn-friday"
+  divButton.appendChild(button)
+}
+createButton2("Sexta-feira")
