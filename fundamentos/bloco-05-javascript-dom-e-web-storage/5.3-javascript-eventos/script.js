@@ -43,3 +43,24 @@ function createButton(string){
   divButton.appendChild(button)
 }
 createButton("Feriados")
+
+
+let button = document.getElementById("btn-holiday");
+let feriados = document.getElementsByClassName("holiday");
+let click = "impar";
+
+button.addEventListener("click", function(){
+ for(let index = 0; index < feriados.length; index = index + 1){
+  if(click === "impar"){
+    feriados[index].style.backgroundColor = "blue";
+  }
+  else{
+    feriados[index].style.backgroundColor = "rgb(238,238,238";
+  }
+ }
+ if(click === "impar"){
+  click = "par";
+ }else{
+  click = "impar"
+ }
+})
