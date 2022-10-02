@@ -17,6 +17,15 @@ const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
 let days = document.getElementById("days")
 days.id = "days"
 
+
+function resetDays(){
+  let filhinhos = days.children;
+  let position = filhinhos.length
+  for(let index = position - 1; index >= 0; index= index -1){
+    filhinhos[index].remove()
+  }
+}
+
 function createDays(){
   for(let index = 0; index < decemberDaysList.length; index = index + 1){
     let itens = document.createElement("li");
@@ -72,3 +81,22 @@ function createButton2(string){
   divButton.appendChild(button)
 }
 createButton2("Sexta-feira")
+let bool = true;
+
+let sextou = document.getElementById("btn-friday");
+sextou.addEventListener("click", function(){
+  let sextas = document.getElementsByClassName("friday");
+  if(bool){
+  for(let index = 0; index < sextas.length; index = index + 1){
+      sextas[index].innerHTML = 'cathaça!';
+    }
+    }else{
+      resetDays()
+      createDays()
+    }
+    if(bool === true){
+      bool = false
+    }else{
+      bool = true
+    }
+  })
