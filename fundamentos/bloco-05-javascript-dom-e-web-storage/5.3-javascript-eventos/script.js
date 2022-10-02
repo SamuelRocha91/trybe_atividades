@@ -109,3 +109,11 @@ sextou.addEventListener("click", function(){
     let query = evento.target;
     query.style.fontSize = "18px"
   } )
+
+  let tarefas = document.querySelector(".my-tasks")
+  function addTarefa(string){
+    let span = document.createElement("span");
+    span.innerText = string;
+    tarefas.appendChild(span)
+  }
+  addTarefa("Cozinhar")
