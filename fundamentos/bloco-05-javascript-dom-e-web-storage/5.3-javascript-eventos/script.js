@@ -147,3 +147,28 @@ sextou.addEventListener("click", function(){
     }
 
   })
+
+  let compromissos = document.querySelector(".input-container");
+  let valorReal = document.getElementById("task-input")
+  let input = document.getElementById("btn-add");
+  input.addEventListener("click",function(evento){
+    if(valorReal.value === ""){
+      alert("ERRO")
+    }
+    else{
+      let span = document.createElement("span");
+      span.innerText = valorReal.value;
+      div = document.createElement("div");
+      div.className = "task";
+      div.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`
+      compromissos.appendChild(span)
+      compromissos.appendChild(div)
+    }
+  })
+
+  valorReal.addEventListener("keypress",function(evento){
+    let tecla = evento.key;
+    if(tecla === "Enter"){
+    input.click()
+    }
+  })
