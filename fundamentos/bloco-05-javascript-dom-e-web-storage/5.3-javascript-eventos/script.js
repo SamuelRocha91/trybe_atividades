@@ -100,3 +100,12 @@ sextou.addEventListener("click", function(){
       bool = true
     }
   })
+  let lis = document.querySelector(".days-container")
+  lis.addEventListener("mouseover", function(evento){
+    let dia = evento.target
+    dia.style.fontSize = "40px";
+  })
+ lis.addEventListener("mouseout", function(evento){
+    let query = evento.target;
+    query.style.fontSize = "18px"
+  } )
