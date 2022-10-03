@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Exercício Web Storage</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <body>
@@ -18,37 +19,37 @@
       <p>Vestibulum rutrum aliquam urna, vitae condimentum mauris mollis ut. Aliquam est lorem, eleifend et mi nec, elementum mollis velit. Proin aliquam augue fringilla mattis hendrerit. Vestibulum posuere, elit ut consequat vehicula, odio risus mollis eros, lobortis cursus diam lacus eu lectus. Duis a erat id tellus sodales commodo quis eget quam. Curabitur dignissim tellus accumsan risus pulvinar convallis. Duis elementum imperdiet accumsan. Phasellus nec convallis purus, a vehicula ipsum. Ut consectetur tincidunt risus quis egestas. Nulla facilisis maximus ante. Suspendisse lobortis dignissim lectus, in tempor ipsum rutrum vitae. Nam sit amet suscipit odio. Sed quis ipsum pretium, ultrices urna ac, tempor est. Integer fermentum aliquam augue, rhoncus euismod urna sodales vel. Maecenas posuere hendrerit elementum.
       </p>
     </main>
-    <form action=""> <h3>Preferências de usuário</h3>
-      <label for="bgcolor"> Cor de fundo da tela:
+    <form action=""><h3>Preferências de usuário</h3>
+      <label id="bgcolor" for="bgcolor"> Cor de fundo da tela:
         <input type="radio" name="backgroundColor" id="red" value="red">vermelho
-        <input type="radio" name="backgroundColor" value = "green"
+        <input type="radio" name="backgroundColor" value ="green"
         id="green"> verde
         <input name="backgroundColor"  type="radio"
         id = "white" value="white">branco
         <input name="backgroundColor"  type="radio" 
-        id="pink"
-         value="pink">rosa
+        id="pink" value="pink">rosa
       </label> 
       <br>
-      <label for=""> Tamanho da Fonte:
-        <input type="text" placeholder="pequena, média ou grande">
+      <label  for=""> Tamanho da Fonte:
+        <input id="fontSize" type="text" placeholder="pequena, media ou grande">
       </label>
       <br>
       <label for=""> Cor do texto:
-        <input type="text">
+        <input placeholder="digite em inglês"   id="color" type="text">
       </label>
       <br>
       <label for=""> Espaçamento das linhas:
-        <input type="text">
+        <input type="text" id="lines" placeholder="coloque um número">
       </label>
       <br>
       <label for=""> Tipo de fonte:
-        <input type="text">
+        <input type="text" id="font" placeholder="digite sua fonte preferida">
       </label>
       <br>
-      <button type="submit">Salvar preferências</button>
+      <button id="btn-preferencias" type="submit">Salvar preferências</button>
     </form>
     <footer>help@lipsum.com <br>
       Privacy Policy</footer>
+      <script src="script.js"></script>
 </body>
 </html>
