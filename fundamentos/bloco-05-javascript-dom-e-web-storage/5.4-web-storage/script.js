@@ -2,11 +2,10 @@
 const corDeFundo = document.getElementById("bgcolor");
 
 const body = document.body;
-
+const colorB = document.body.style.backgroundColor
 corDeFundo.addEventListener("click", function(evento){
   let corUsada = evento.target;
-  console.log(corUsada)
-  body.style.backgroundColor = corUsada.value
+  body.style.backgroundColor = corUsada.value;
 })
 
 const tamanhoFonte = document.getElementById("fontSize");
@@ -40,7 +39,40 @@ fonte.addEventListener("keyup", function(){
 })
 
 
-const botao = document.getElementById("btn-preferencias");
-botao.addEventListener('click', function(){
+const button = document.querySelector("#btn-preferencias");
+button.addEventListener('click', function(evento){
+  evento.preventDefault()
+
+
+  let preferences = JSON.parse(localStorage.getItem('config')) || [];
+  let config = {
+    bgcolor: colorB,
+    fontSyze: tamanhoFonte.value,
+    color: cor.value,
+    lines: linhas.value,
+    font: fonte.value,
+  }
+
+  preferences[0] = config;
+
+  localStorage.setItem('config', JSON.stringify(preferences))
+
+  fonte.value = "";
+  linhas.value ="";
+  cor.value = "";
+  tamanhoFonte.value = "";
+  corDeFundo.checked = false;
 
 })
+
+window.onload = carregamento
+
+function carregamento(){
+  let preferences = JSON.parse(localStorage.getItem("config")) || [];
+  body.style.fontFamily = preferences[0]['font'];
+  body.style.color = preferences[0]['color'];
+  body.style.lineHeight = `${preferences[0]['lines']}px`;
+  if(preferences[0]['fontSyze'] === "media"){
+    body.style.fontSize = "medium";
+}
+}
