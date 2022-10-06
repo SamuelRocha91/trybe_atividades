@@ -10,9 +10,11 @@
   <form method="get">
     <fieldset>
       <legend>Concurso TrybeTrip</legend>
-      <label for="input-name">Nome:
-        <input type="text" name="nome" id="input-name">
+      <label for="input-name">Nome Completo:
+        <input minlength="10" maxlength="40" placeholder="Insira seu nome" type="text" name="nome" id="input-name">
       </label>
+      <label for="input-email">E-mail:<input placeholder="insira seu email" minlength="10" maxlength="50" type="email" name="email" id="input-email"></label>
+      
     </fieldset>
   </form>
 </body>
