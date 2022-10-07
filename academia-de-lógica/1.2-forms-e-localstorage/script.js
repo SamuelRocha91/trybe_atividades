@@ -8,6 +8,16 @@ const btnClear = document.querySelector('#clear-btn');
 const ol = document.querySelector('ol');
 console.log(select)
 
+btnClear.addEventListener('click', function(event) {
+  event.preventDefault();
+  checkin.value ="";
+  checkout.value = "";
+  textArea.value = "";
+  const input = document.querySelectorAll('input')
+  for (let index = 0; index < input.length; index = index + 1) {
+    input[index].checked = false;
+  }
+})
 btnSubmit.addEventListener('click', function(event) {
   event.preventDefault();
   const li = document.createElement('li');
