@@ -6,6 +6,21 @@ const textArea = document.querySelector('.obs');
 const btnSubmit = document.querySelector('#submit-btn');
 const btnClear = document.querySelector('#clear-btn');
 const ol = document.querySelector('ol');
+console.log(select)
+
+btnSubmit.addEventListener('click', function(event) {
+  event.preventDefault();
+  const li = document.createElement('li');
+  const dataEntrada = getData(checkin.value);
+  const dataSaida = getData(checkout.value)
+  
+  const quarto = getQuarto()
+  console.log(quarto)
+  const pessoas = getPessoas()
+  const obs = textArea.value;
+  li.innerText = `Reserva para o dia ${dataEntrada} até o dia ${dataSaida} Quarto ${quarto} - Para  ${pessoas} - Obs: ${obs}`;
+  ol.appendChild(li)
+})
 
 function getQuarto() {
   for (let i = 0; i < bedroom.length; i++) {
@@ -18,6 +33,7 @@ function getQuarto() {
 function getPessoas() {
   return select.options[select.selectedIndex].value;
 }
+
 
 function getData(value) {
   const valueDate = value + 'T03:00:00.000Z';
