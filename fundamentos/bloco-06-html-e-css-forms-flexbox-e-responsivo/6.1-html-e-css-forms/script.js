@@ -16,6 +16,8 @@ button.addEventListener('click', function(event) {
 })
 const limpar = document.getElementById('limpar');
 const yes = document.getElementById('yes');
+const not = document.getElementById('not');
+const teste = document.getElementById('teste');
 yes.addEventListener('change', function() {
   if(limpar.disabled){
 limpar.disabled = !yes.checked;
