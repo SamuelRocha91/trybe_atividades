@@ -17,6 +17,10 @@ btnClear.addEventListener('click', function(event) {
   for (let index = 0; index < input.length; index = index + 1) {
     input[index].checked = false;
   }
+  const filha = ol.children;
+  for(let index = filha.length - 1; index >= 0 ; index = index - 1){
+    filha[index].remove();
+  }
 })
 btnSubmit.addEventListener('click', function(event) {
   event.preventDefault();
@@ -29,7 +33,12 @@ btnSubmit.addEventListener('click', function(event) {
   const pessoas = getPessoas()
   const obs = textArea.value;
   li.innerText = `Reserva para o dia ${dataEntrada} até o dia ${dataSaida} Quarto ${quarto} - Para  ${pessoas} - Obs: ${obs}`;
-  ol.appendChild(li)
+  ol.appendChild(li);
+  let array = JSON.parse(localStorage.getItem('frases')) || [];
+  array.push(li.innerText);
+  localStorage.setItem('frases', JSON.stringify(array))
+ 
+
 })
 
 function getQuarto() {
@@ -51,3 +60,10 @@ function getData(value) {
   dataFormatada = data.toLocaleDateString('pt-BR');
   return dataFormatada;
 }
+window.onload = function (){
+  const minhaLista = JSON.parse(localStorage.getItem('frases')) || [];
+    const li = document.createElement('li');
+    console.log(minhaLista)
+    li.innerText = minhaLista[minhaLista.length - 1]
+    ol.appendChild(li)
+  }
