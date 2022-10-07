@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +7,46 @@
   <link rel="stylesheet" href="style.css">
   <title>Hotel Trybe</title>
 </head>
-<header class="header-trybe">
-  <h1>Hotel Trybe</h1>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q0v72AJA-p9V_oPst_65uEG9dr1WxKN-ZYp_5gE&s" alt="Logotipo da Trybe">
-</header>
-
 <body>
-  <!-- Seu código aqui -->
+  <header class="header-trybe">
+    <h1>Hotel Trybe</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q0v72AJA-p9V_oPst_65uEG9dr1WxKN-ZYp_5gE&s" alt="Logotipo da Trybe">
+  </header>
+  <form action="" method="get">
+    <section class="hotel-form">
+      <label for="input-date">Checkin</label>
+      <input type="date" name="datein" id="input-date" class="inputCheckin">
+      <label for="dateout">Checkout</label>
+      <input type="date" name="dateout" id="dateout" class="inputCheckout">
+    </section>
+
+    <section class="hotel-form">
+      <label for="">Tipos de quartos:</label>
+      <input type="radio" name="bedroom" id="comum" class="bedroom">
+      <label for="comum">Comum</label>
+      <input type="radio" name="bedroom" id="club" class="bedroom">
+      <label for="club">Club</label>
+      <input type="radio" name="bedroom" id="luxo" class="bedroom">
+      <label for="luxo">Luxo</label>
+    </section>
+
+    <section class="hotel-form">
+      <label for="">Quantidade de pessoas</label>
+      <select name="quantidade" id="input-qtdade">
+        <option class="nPessoas" value="1">1</option>
+        <option class="nPessoas" value="2">2</option>
+        <option class="nPessoas" value="3">3</option>
+        <option class="nPessoas" value="4">4</option>
+      </select>
+    </section>
+
+    <section class="hotel-form">
+      <label for=""></label>
+      <textarea class="obs" name="obs" id="input-obs" cols="30" rows="10"></textarea>
+    </section>
+
+    <button type="submit" id="submit-btn"></button>
+  </form>
   <script src="script.js"></script>
 </body>
 
