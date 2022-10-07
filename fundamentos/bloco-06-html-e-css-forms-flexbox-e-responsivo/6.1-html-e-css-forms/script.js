@@ -7,21 +7,19 @@ const usoimg = document.getElementById('input-imagem');
 button.addEventListener('click', function(event) {
   event.preventDefault();
   const validName = name.value.length >= 10 && name.value.length <= 40;
-  const validacao = validName
+  const validEmail = email.value.length >= 10 && email.value.length <= 40;
+  const textArea = textao.value.length <= 500;
+  const validacao = validName && validEmail && textArea
   if(validacao){
-    alert('Dados enviados com sucesso')
+    alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip')
   }else{
     alert('Dados inválidos!')
   }
 })
-const limpar = document.getElementById('limpar');
-const yes = document.getElementById('yes');
-const not = document.getElementById('not');
+
 const teste = document.getElementById('teste');
-yes.addEventListener('change', function() {
-  if(limpar.disabled){
-limpar.disabled = !yes.checked;
-  }else {
-    limpar.disabled 
-  }
+usoimg.addEventListener('change', function() {
+  
+button.disabled = !usoimg.checked;
+  
 })
