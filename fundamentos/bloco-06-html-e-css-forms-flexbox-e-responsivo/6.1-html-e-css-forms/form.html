@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Concurso TrybeTrip</title>
+</head>
+<body>
+  <form method="get">
+    <fieldset>
+      <div>
+        <legend>Concurso TrybeTrip</legend>
+        <img width='15px' src="https://cdn-icons-png.flaticon.com/128/2991/2991110.png" alt="">
+        <label for="input-name">Nome Completo:</label>
+        <input required minlength="10" maxlength="40" placeholder="Insira seu nome" type="text" name="nome" id="input-name">
+      </div>
+      <label for="input-email">E-mail:</label>
+      <input placeholder="insira seu email" minlength="10" maxlength="50" type="email" name="email" id="input-email">
+      <label for="">Destino Preferido:</label>
+        <label for="input-destino">
+          <input value='city' type="radio" name="destinoFavorito" id="input-destino">Cidade
+        </label>
+        <label for="input-campo">
+          <input value="camp" type="radio" name="destinoFavorito" id="input-campo">Campo
+        </label>
+        <label for="praia">
+          <input type="radio" name="destinoFavorito" value="beach" id="praia">Praia
+        </label>
+        <label for="input-montanha">
+          <input type="radio" name="destinoFavorito" value="mountain" id="input-montanha">Montanha
+        </label>
+      <label for="input-text">Por que você deve ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+      <textarea name="texto" id="input-text" cols="50" rows="10" maxlength="500"></textarea>
+      <label for="input-date">Qual a melhor data para realizar sua viagem?
+        <input type="date" name="date" id="input-date">
+      </label>
+      <label id='testando' for="">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        <input type="radio" value="sim" name="lembrar" id="yes">
+        <label for="">Sim</label> 
+        <input id="input-radio2" type="radio" name="lembrar" value="not">
+        <label for="not">Não</label> 
+      </label>
+      <label for="input-imagem">
+        <input type="checkbox" name="imagem" id="input-imagem" value="usoImagem" required>
+        Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros</label>
+      <button id='input-button' type="submit" disabled>ENVIAR</button>
+      <button type="reset" id='limpar' >Limpar informaçoes</button>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
