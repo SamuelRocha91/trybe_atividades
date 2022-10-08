@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hotel Trybe</title>
+</head>
+<body>
+  <header class="header-trybe">
+    <h1>Hotel Trybe</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q0v72AJA-p9V_oPst_65uEG9dr1WxKN-ZYp_5gE&s" alt="Logotipo da Trybe">
+  </header>
+  <form action="" method="get">
+    <section class="hotel-form">
+      <h3>Faça sua reserva:</h3>
+      <label for="input-date">Checkin</label>
+      <input type="date" name="datein" id="input-date" class="inputCheckin">
+      <label for="dateout">Checkout</label>
+      <input type="date" name="dateout" id="dateout" class="inputCheckout">
+    </section>
+
+    <section class="hotel-form">
+      <label for="">Tipos de quartos:</label>
+      <input type="radio" name="bedrsoom" value="Comum" id="comum" class="bedroom">
+      <label for="comum">Comum</label>
+      <input type="radio" name="bedrsoom" id="club" class="bedroom" value="club">
+      <label for="club">Club</label>
+      <input type="radio" name="bedrsoom" id="luxo" class="bedroom" value="Luxo">
+      <label for="luxo">Luxo</label>
+    </section>
+
+    <section class="hotel-form">
+      <label for="">Quantidade de pessoas</label>
+      <select class="nPessoas" name="quantidade" id="input-qtdade">
+        <option value="uma">1</option>
+        <option value="duas">2</option>
+        <option value="três">3</option>
+        <option value="quatro">4</option>
+      </select>
+    </section>
+
+    <section class="hotel-form">
+      <label for=""></label>
+      <textarea class="obs" name="obs" id="input-obs" cols="30" rows="10"></textarea>
+    </section>
+
+    <button type="submit" id="submit-btn">Reservar</button>
+
+    <section class="list-section">
+      <h3>Lista de Reservas</h3>
+      <ol></ol>
+      <button id="clear-btn">Limpar</button>
+    </section>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
