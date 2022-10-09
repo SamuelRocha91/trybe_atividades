@@ -28,7 +28,6 @@ header{
 }
 .header{
   display: flex;
-  justify-content: center;
   width: 55%;
   align-items: center;
   justify-content: space-between;
