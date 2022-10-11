@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 10px;
+  text-align: justify;
+  font-size: 30px;
+}
+h1, h2, h3{
+  text-align: center;
+  
+}
+footer{
+  margin: 50px 0;
+}
+footer p:nth-of-type(1){
+  margin-top: 20px;
+}
