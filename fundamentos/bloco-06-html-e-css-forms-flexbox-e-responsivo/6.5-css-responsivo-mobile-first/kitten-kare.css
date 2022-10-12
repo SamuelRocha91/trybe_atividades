@@ -104,3 +104,44 @@ body {
     margin: 0px;
   }
 }
+@media screen and (max-width: 360px) {
+  #aside{
+    display: none;
+  }
+  #aside , #navigation li a, #footer, #content, #header{
+    padding: 0px;
+  }
+  #content-container{
+    width: 100%;
+  }
+ #content{
+  width:100%;
+ }
+ #content img{
+  width: 100%;
+ }
+ #navigation ul{
+  flex-direction: column;
+ }
+  #navigation li a {
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 0px;
+  }
+
+ #header{
+  position: fixed;
+  width: 100%;;
+ }
+ .content{
+  margin-left:20%;
+  width:80%;
+  height:500px;
+ }
+ .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+}
