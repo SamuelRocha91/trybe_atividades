@@ -132,16 +132,11 @@ body {
 
  #header{
   position: fixed;
-  width: 100%;;
+  width: 100%;
+  top: 0;
+  left:0;
  }
- .content{
-  margin-left:20%;
-  width:80%;
-  height:500px;
- }
- .container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
- }
+#navigation{
+  margin-top: 75px;
+}
 }
