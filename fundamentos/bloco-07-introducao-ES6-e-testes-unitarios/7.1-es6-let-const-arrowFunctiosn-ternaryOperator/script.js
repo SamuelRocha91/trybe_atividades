@@ -46,3 +46,7 @@ const sortOddsAndEvens = (array) => {
 
 
 console.log(`Os números ${sortOddsAndEvens(oddsAndEvens)} se encontram ordenados de forma crescente!`); 
+
+/* Bônus (opcional): tente fazer o mesmo exercício utilizando o método array.sort(). Spoiler: É possível realizar uma função que ordene qualquer array de números. */
+
+console.log(oddsAndEvens.sort(function(a,b){a-b}))
