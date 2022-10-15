@@ -1,10 +1,10 @@
 /* Crie uma função que receba um número e retorne seu fatorial */
 
 const fatorial = (numero) => {
-  let fator = numero;
+  let result = numero;
   for (let index = numero - 1; index > 0; index -= 1) {
-    fator = fator * index;
+    result = result * index;
   }
-  return fator
+  return result
 }
-console.log(fatorial(3))
+console.log(`Esse é o fatorial de 3! = ${fatorial(3)}`)
