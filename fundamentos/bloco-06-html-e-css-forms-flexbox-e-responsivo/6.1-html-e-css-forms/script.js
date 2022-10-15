@@ -23,3 +23,12 @@ usoimg.addEventListener('change', function() {
 button.disabled = !usoimg.checked;
   
 })
+
+let $min = document.querySelector('.real [name="realDPX-min"]'),
+$min.DatePickerX.init({
+  mondayFirst: true,
+  minDate    : new Date(2021, 5, 9),
+  maxDate    : $max
+});
+
+
