@@ -63,8 +63,6 @@ const positionKey = (objeto, numero) => Object.values(objeto)[numero];
 /* Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. */
 
 function validation(objeto, chave, valor) {
-  let valor1 = false;
-  let valor2= false;
   const arrayObject = Object.entries(objeto);
   for (let index = 0; index < arrayObject.length; index += 1) {
       if (arrayObject[index][0] === chave && arrayObject[index][1] === valor){
