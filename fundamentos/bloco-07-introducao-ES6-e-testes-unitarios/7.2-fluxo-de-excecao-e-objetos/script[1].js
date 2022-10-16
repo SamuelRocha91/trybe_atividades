@@ -106,5 +106,4 @@ function validation(objeto, chave, valor) {
     objetoRelatorio['estudantes'] = total;
     return objetoRelatorio
   }
-
   console.log(relatorio(allLessons, 'Maria Clara'));
