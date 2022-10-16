@@ -48,3 +48,7 @@ modifier2.lesson2 = lesson2;
 modifier3.lesson3 = lesson3;
 const allLessons = Object.assign({}, modifier1, modifier2, modifier3)
 console.log(allLessons)
+
+const numStudents = (objeto) => objeto.lesson1.numeroEstudantes + objeto.lesson2.numeroEstudantes + objeto.lesson3.numeroEstudantes;
+
+console.log(numStudents(allLessons))
