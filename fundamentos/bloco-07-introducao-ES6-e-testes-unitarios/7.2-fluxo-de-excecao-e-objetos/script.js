@@ -41,11 +41,19 @@ const customerInfo = (order) => {
   console.log(orderReal)
   return console.log(`Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, ${order.address.street}, Nº: ${order.address.number}, AP: ${order.address.apartment}`);
 };
-
 customerInfo(order);
+
+/* Complete a função orderModifier() para que seu retorno seja similar a “Olá Luiz Silva, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00.”
+
+Modifique o nome da pessoa compradora.
+Modifique o valor total da compra para R$ 50,00. */
+order.order.delivery.deliveryPerson = 'Luiz Silva'
+order.payment.total = 50;
+
 
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias.
+  return console.log(`Olá ${order.order.delivery.deliveryPerson}, o total do seu pedido de Marguerita, Peperoni e Coca-Cola Zero é de R$ ${order.payment.total},00`);
 
 };
 
