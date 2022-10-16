@@ -33,9 +33,15 @@ HTML
 CSS */
 
 const substituaX = (nome) => {
-  const text = 'Tryber x aqui!'
+  const text = `Tryber x aqui!`
   let arrayText = text.split(' ');
   arrayText[1] = nome;
   return arrayText.join(' ')
 }
-console.log(substituaX('Bebeto'))
+
+const minhasSkills = (param) => {
+  const skills = ['css', 'html', 'unix'];
+  let newText = `${param}\nMinhas três principais habilidades são:\n\n${skills[0]}\n${skills[1]}\n${skills[2]}`;
+  return newText;
+}
+console.log(minhasSkills(substituaX('Bebeto')))
