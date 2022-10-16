@@ -25,3 +25,13 @@ function addTurn(objeto, chave, valor) {
 
 addTurn(lesson2,'turno','noite')
 console.log(lesson2)
+
+/* Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro*/
+const listKeys = (objeto) => Object.keys(objeto);
+console.log(listKeys(lesson2))
+
+/* Crie uma função para mostrar o tamanho de um objeto.
+ */
+const objectLength = (objeto) => Object.entries(objeto).length
+console.log(objectLength(lesson2))
+
