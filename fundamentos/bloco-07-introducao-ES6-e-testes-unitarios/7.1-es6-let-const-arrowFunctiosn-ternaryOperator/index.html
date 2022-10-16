@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 03</title>
+</head>
+<body>
+  <main>
+    <p>QUANTIDADE DE CLIQUES: <span id="contador">0</span></p>
+    <button id="button" type="button">Clique aqui</button>
+  </main>
+  <script>
+    const button = document.getElementById('button');
+    const span = document.getElementById('contador');
+    button.addEventListener('click', () => {
+      let count = parseInt(span.innerText);
+      count += 1;
+      span.innerText = count;
+    })
+  </script>
+</body>
+</html>
