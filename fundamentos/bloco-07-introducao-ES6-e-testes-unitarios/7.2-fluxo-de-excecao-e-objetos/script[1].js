@@ -73,9 +73,9 @@ function validation(objeto, chave, valor) {
   }
   console.log(validation(lesson3, 'turno', 'noite'))
   console.log(validation(lesson3, 'materia', 'Maria Clara'))
- /*  Utilizando o objeto (allLesson), crie uma função para contar quantos estudantes assistiram às aulas de Matemática.
+ /*  Utilizando o objeto (allLesson), crie uma função para contar quantos estudantes assistiram às aulas de Matemática. */
 
-  Utilizando o objeto (allLesson), crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. */
+
   function studentMath(objeto) {
     const array = Object.entries(objeto);
     let total = 0
@@ -87,3 +87,24 @@ function validation(objeto, chave, valor) {
     return total
   }
   console.log(studentMath(allLessons))
+
+  /* Utilizando o objeto (allLesson), crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. */
+
+  function relatorio(objeto, professor) {
+    const objetoRelatorio = {};
+    objetoRelatorio['professor'] = professor 
+    const array = Object.entries(objeto);
+    const aulas = [];
+    let total = 0;
+    for (let index in array) {
+      if (array[index][1]['professor'] === professor) {
+        aulas.push(array[index][1]['materia']);
+        total += array[index][1]['numeroEstudantes']
+      }
+    }
+    objetoRelatorio['aulas'] = aulas;
+    objetoRelatorio['estudantes'] = total;
+    return objetoRelatorio
+  }
+
+  console.log(relatorio(allLessons, 'Maria Clara'));
