@@ -47,8 +47,31 @@ modifier1.lesson1 = lesson1;
 modifier2.lesson2 = lesson2;
 modifier3.lesson3 = lesson3;
 const allLessons = Object.assign({}, modifier1, modifier2, modifier3)
-console.log(allLessons)
-
+/* console.log(allLessons)
+ */
+/* Usando o objeto criado no tópico anterior, crie uma função que retorne o número total de estudantes em todas as aulas.
+ */
 const numStudents = (objeto) => objeto.lesson1.numeroEstudantes + objeto.lesson2.numeroEstudantes + objeto.lesson3.numeroEstudantes;
 
-console.log(numStudents(allLessons))
+/* console.log(numStudents(allLessons))
+ */
+/* Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.  */
+const positionKey = (objeto, numero) => Object.values(objeto)[numero];
+
+/* console.log(positionKey(lesson1, 0))
+ */
+/* Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. */
+
+function validation(objeto, chave, valor) {
+  let valor1 = false;
+  let valor2= false;
+  const arrayObject = Object.entries(objeto);
+  for (let index = 0; index < arrayObject.length; index += 1) {
+      if (arrayObject[index][0] === chave && arrayObject[index][1] === valor){
+        return true
+      }
+    }
+    return false
+  }
+  console.log(validation(lesson3, 'turno', 'noite'))
+  console.log(validation(lesson3, 'materia', 'Maria Clara'))
