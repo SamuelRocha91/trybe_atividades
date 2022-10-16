@@ -73,3 +73,17 @@ function validation(objeto, chave, valor) {
   }
   console.log(validation(lesson3, 'turno', 'noite'))
   console.log(validation(lesson3, 'materia', 'Maria Clara'))
+ /*  Utilizando o objeto (allLesson), crie uma função para contar quantos estudantes assistiram às aulas de Matemática.
+
+  Utilizando o objeto (allLesson), crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. */
+  function studentMath(objeto) {
+    const array = Object.entries(objeto);
+    let total = 0
+    for (let index in array) {
+      if (array[index][1]['materia'] === 'Matemática') {
+        total += array[index][1]['numeroEstudantes'];
+      }
+    }
+    return total
+  }
+  console.log(studentMath(allLessons))
