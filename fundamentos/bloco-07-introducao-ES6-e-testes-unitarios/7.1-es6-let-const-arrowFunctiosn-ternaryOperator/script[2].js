@@ -45,3 +45,31 @@ const minhasSkills = (param) => {
   return newText;
 }
 console.log(minhasSkills(substituaX('Bebeto')))
+
+const s = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
+
+  // Using s = [2, 5, 7] would be invalid
+console.log(s.length)
+  for(let index = 0; index < s.length; index += 1) {
+    s[index] = s[s.length - (1 + index)]
+  }
+  return s
+}
+console.log(editInPlace());
+const minhasSkills = (func) => {
+  const skills = ['JavaScript', 'HTML', 'CSS'];
+  let resultado = `
+  ${func}
+
+  Minhas três principais habilidades são:`;
+
+  skills.forEach((skill) => { // estrutura de repetição para iterar sobre o array de skills
+    resultado = `${resultado}
+    - ${skill}`;
+  }); // reatribui e adiciona a skill atual a variável resultado
+  return resultado;
+};
+
+console.log(minhasSkills(substituaX('Bebeto')));
