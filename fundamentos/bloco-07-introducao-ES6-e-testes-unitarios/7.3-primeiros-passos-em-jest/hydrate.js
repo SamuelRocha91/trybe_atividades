@@ -1,2 +1,4 @@
-const hydrate = '';
+const hydrate = () => {
+  
+};
 module.exports = hydrate;
