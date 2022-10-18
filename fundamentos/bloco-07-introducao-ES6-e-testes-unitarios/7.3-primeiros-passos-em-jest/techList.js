@@ -1,4 +1,6 @@
-const techList = '';
+const techList = (array, texto) => {
+
+}
 
 
 
