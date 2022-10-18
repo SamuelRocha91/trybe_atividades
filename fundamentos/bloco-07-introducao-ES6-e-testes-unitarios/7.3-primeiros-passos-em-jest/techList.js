@@ -1,5 +1,8 @@
 const techList = (array, texto) => {
   const newArray = array.sort();
+  if (array.length === 0) {
+    return 'Vazio!'
+  }
   const arrayObjeto = [] ;
 
   for(let index = 0; index < array.length; index += 1) {
@@ -8,7 +11,7 @@ const techList = (array, texto) => {
   return arrayObjeto
 }
 
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'))
+console.log(techList([], 'Lucas'))
 
 module.exports = techList;
 
