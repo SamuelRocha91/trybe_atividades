@@ -1,0 +1,19 @@
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color: blanchedalmond;
+}
+button{
+  border-radius: 7px;
+  padding: 10px;
+  background-color: aqua;
+  color: black;
+  cursor: pointer;
+}
+body{
+  background-color: brown
+}
