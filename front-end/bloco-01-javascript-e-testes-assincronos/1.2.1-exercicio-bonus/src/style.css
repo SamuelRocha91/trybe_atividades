@@ -1,0 +1,30 @@
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 100%;
+}
+button{
+  width: 10%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+body{
+  background-color: lavender;
+}
+img{
+  width: 100%;
+  border-radius: 5%;
+  border: 1px grey;
+}
+figure{
+  padding: 5px;
+}
