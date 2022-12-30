@@ -75,55 +75,63 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 01: Introdução - Frontend e Javascript assíncrono
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 1-1: _Ambiente de desenvolvimento_
+- [x] 1-2: _Javascript Assíncrono - Promises e fetch_
+- [x] 1-3: _Prática - Casa de Câmbio_
+- [x] 1-4: _Async, await e testes assíncronos_
+- [x] 1-5: _[Projeto - Carrinho de compras]()_
 
-##### Bloco 12: React
+##### Bloco 02: Introdução ao React
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 2-1: _'Hello, world!' no React!_
+- [x] 2-2: _Componentes React_
+- [x] 2-3: _[Projeto - Solar System]()_
 
-##### Bloco 13: React
+##### Bloco 03: COmponentes com Estado, Eventos e React Router
 
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 3-1: _Components com estado e eventos_
+- [x] 3-2: _Formulários no React_
+- [x] 3-3: _[Projeto - Tryunfo]()_
 
-##### Bloco 14: Metodologias Ágeis
+##### Bloco 04: Ciclo de vida de Componentes e React Router
 
-- [ ] 14-1: _Metodologias Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [x] 4-1: _Ciclo de vida de componentes em React_
+- [x] 4-2: _React Router_
+- [x] 4-3: _[Projeto - TRYBETUNES]()_
 
-##### Bloco 15: Testes em React
+##### Bloco 05: Metodologias Ágeis
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [ ] 5-1: _Metodologias Ágeis_
+- [ ] 5-2: _[Projeto - Frontend Online Store]()_
 
-##### Bloco 16: Introdução ao Redux
+##### Bloco 06: Testes automatizados com React Testing Library
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [ ] 6-1: _RTL - Primeiros passos_
+- [ ] 6-2: _TRTL - Mocks e Inputs_
+- [ ] 6-3: _TRTL - Testando React Router_
+- [ ] 6-4: _[Projeto - Testes em React]()_
 
-##### Bloco 17: Projeto React
+##### Bloco 07: Gerenciamento de estado com Redux
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [ ] 7-1: _Introdução ao Redux - O estado global da aplicação_
+- [ ] 7-2: _Usando o Redux no React_
+- [ ] 7-3: _Usando o Redux no React - Prática_
+- [ ] 7-4: _Usando o Redux no React - Actions Assíncronas_
+- [ ] 7-5: _Testes em React-Redux_
+- [ ] 7-6: _[Projeto - Trybe Wallet]()_
 
-##### Bloco 18: React & Context API
+##### Bloco 08: Projeto Jogo de Trivia
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [ ] 8-1: _[Projeto - Jogo de Trivia]()_
 
-##### Bloco 19: Projeto Final de Front-end
+##### Bloco 09: React Hooks & Context API
+
+- [ ] 9-1: _React Hooks - useState e useEffect_
+- [ ] 9-2: _Contesxt Api_
+- [ ] 9-3: _Custom Hooks_
+- [ ] 9-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+
+##### Bloco 10: Projeto Final de Front-end
 
 - [ ] 19-1: _[Projeto - App de Receitas]()_
 
