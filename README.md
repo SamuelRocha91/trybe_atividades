@@ -10,8 +10,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- [x] 1-3: _Unix & Shell- Part 1_
-- [x] 1-4: _Unix & Shell- Part 2_
+- [x] 1-1: _Unix & Shell- Part 1_
+- [x] 1-2: _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
 
@@ -33,7 +33,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-5: _JavaScriptES6 - let, const, arrow functions e template literals_
+- [x] 4-6: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -41,11 +42,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Meme Generator]()_
-- [x] 5-6: _[Projeto - Arte com Pixels]()_
-- [x] 5-7: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- [x] 5-5: _[Projeto - Arte com Pixels]()_
+- [x] 5-6: _[Projeto - Lista de tarefas]()_
 
 ##### Bloco 6: HTML & CSS avançado
 
@@ -58,35 +56,24 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
-- [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [x] 7-2: _JavaScript ES6 - Objects_
-- [x] 7-3: _Testes unitários em JavaScript_
+- [x] 7-1: _FLuxo de exceções e manipulação de objetos_
+- [x] 7-2: _Primeiros passos em Jest_
+- [x] 7-3: _Matchers e cobertura de código_
 - [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: JavaScript ES6
 
-- [x] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [x] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [x] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
+- [x] 8-1: _JavaScript ES6 - Higher Order Functions - Introdução_
+- [x] 8-2: _JavaScript ES6 - Higher Order Functions - Sort e Map_
+- [x] 8-3: _JavaScript ES6 - Higher Order Functions - Filter e reduce_
 - [x] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [x] 8-5: _[Projeto - Zoo functions]()_
+- [x] 8-5: _JavaScript ES6 - Array desestructuring, Default desestructuring, Object property e default parameters_
+- [x] 8-6: _[Projeto - Zoo functions]()_
 
-##### Bloco 9: Assincronicidade & Callbacks
-
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
-
-##### Bloco 10: Jest
-
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 11: Introdução - React
+##### Bloco 01: Introdução - Frontend e Javascript assíncrono
 
 - [ ] 11-1: _'Hello, world!' no React!_
 - [ ] 11-2: _Componentes React_
