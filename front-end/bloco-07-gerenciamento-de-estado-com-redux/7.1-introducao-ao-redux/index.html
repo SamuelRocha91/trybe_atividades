@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Trybe</title>
+    <script src="https://unpkg.com/redux@latest/dist/redux.js"></script>
+    <style>
+      body {
+        color: white;
+        background-color: #333;
+        font-family: sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Minha Aplicação</h1>
+      <p>Status: Você está <span id="status">Offline</span></p>
+      <button id="toggle-theme">Light Mode</button>
+      <button id="toggle-status">Ficar Online</button>
+    </div>
+    <script>
+      const INITIAL_STATE = {
+        status: 'offline',
+        theme: 'dark',
+      };
+
+      const reducer = (state = INITIAL_STATE, action) => {
+          switch (action.type) {
+            case 'MODE_THEME':
+                return {
+                    ...state,
+                    theme: state.theme === 'dark' ? 'ligth' : 'dark'
+                }
+            case 'STATUS_SITUATION':
+                return {
+                    ...state,
+                    status: state.status === 'offline' ? 'online' : 'offline'
+                }
+        }
+        
+
+      }
+
+      const store = Redux.createStore(reducer)
+
+      const themeButton = document.getElementById('toggle-theme');
+      const statusButton = document.getElementById('toggle-status');
+
+      themeButton.addEventListener('click', () => {
+        store.dispatch({ type: 'MODE_THEME'})
+      });
+
+      statusButton.addEventListener('click', () => {
+        store.dispatch({ type: 'STATUS_SITUATION' })
+      });
+
+      store.subscribe(() => {
+        const span = document.getElementById('status');
+        const body = document.querySelector('body')
+        const globalState = store.getState();
+        console.log(globalState)
+        if(globalState.theme === 'ligth' ) {
+            body.style.backgroundColor = 'White';
+            body.style.color = 'black';
+            themeButton.innerHTML = 'Ligth Mode'
+        }
+        else{
+            body.style.backgroundColor = 'black';
+            body.style.color = '#fff';
+            themeButton.innerHTML = 'Dark Mode'
+        }
+
+        if(globalState.status === 'offline') {
+            span.innerHTML = 'Offline'
+            statusButton.innerHTML = 'Ficar Online'
+        }
+        else {
+            span.innerHTML = 'Online'
+            statusButton.innerHTML = 'Ficar Offline'
+        }
+      })
+    </script>
+  </body>
+</html>
