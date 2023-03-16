@@ -13,4 +13,4 @@
 <li>Remover o container</li>
 </ul>
 
-<img src="/home/samuel/repositories/trybe_atividades/backEnd/bloco-01-docker-utilizando-containers/1.1-docker-utilizando-containers/Captura de tela de 2023-03-16 10-16-04.png" alt="atividade no terminal printada">
+<img src="https://github.com/SamuelRocha91/trybe_atividades/blob/main/backEnd/bloco-01-docker-utilizando-containers/1.1-docker-utilizando-containers/Captura%20de%20tela%20de%202023-03-16%2010-16-04.png?raw=true" alt="atividade no terminal printada">
