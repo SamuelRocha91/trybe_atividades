@@ -127,7 +127,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 09: React Hooks & Context API
 
 - [x] 9-1: _React Hooks - useState e useEffect_
-- [x] 9-2: _Contesxt Api_
+- [x] 9-2: _Context Api_
 - [x] 9-3: _Custom Hooks_
 - [x] 9-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
@@ -161,10 +161,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 04: Introdução ao desenvolvimento Web com Node.js 
 - [ ] 4-1: _Node.js: Runtime Assíncrono_
-- [ ] 4-2: _Node .js: API REST com Express_
-- [ ] 4-3: _Node .js: Testes de Integração_
-- [ ] 4-4: _Node .js: Express e Middlewares_
-- [ ] 4-5: _Node .js: Express e MySQL_
+- [ ] 4-2: _Node.js: API REST com Express_
+- [ ] 4-3: _Node.js: Testes de Integração_
+- [ ] 4-4: _Node.js: Express e Middlewares_
+- [ ] 4-5: _Node.js: Express e MySQL_
 - [ ] 4-6: _[Projeto - Talker Manager]()_
 
 ##### Bloco 05: Arquitetura de Software: Model, Service e Controller
@@ -188,7 +188,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 08: Introdução a TypeScript
 
-- [ ] 8-1: _Introdução ao TypesScript
+- [ ] 8-1: _Introdução ao TypesScript_
 - [ ] 8-2: _Tipagem Estática e Generics_
 - [ ] 8-3: _Express com TypeScript_
 - [ ] 8-4: _[Projeto - Trybesmith]()_
@@ -212,7 +212,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 11-2: _Filter Operators_
 - [ ] 11-3: _Operadores de consulta_
 - [ ] 11-4: _Updates Simples_
-- [ ] 11-5: _Updates COmplexos - Arrays_
+- [ ] 11-5: _Updates Complexos - Arrays_
 - [ ] 11-6: _[Projeto - Commerce]()_
 
 ##### Bloco 12: APIs OO e NoSQL
