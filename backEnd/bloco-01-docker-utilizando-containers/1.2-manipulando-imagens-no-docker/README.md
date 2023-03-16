@@ -11,5 +11,5 @@
 <li>Após o Build, executar o container com a mensagem padrão e depois passando outra de parâmetro</li>
 </ul>
 
-<img src="https://github.com/SamuelRocha91/trybe_atividades/blob/main/backEnd/bloco-01-docker-utilizando-containers/1.1-docker-utilizando-containers/Captura%20de%20tela%20de%202023-03-16%2010-16-04.png?raw=true" alt="atividade no terminal printada">
+<img src="https://github.com/SamuelRocha91/trybe_atividades/blob/main/backEnd/bloco-01-docker-utilizando-containers/1.2-manipulando-imagens-no-docker/Captura%20de%20tela%20de%202023-03-16%2020-00-33.png?raw=true" alt="atividade no terminal printada">
 
