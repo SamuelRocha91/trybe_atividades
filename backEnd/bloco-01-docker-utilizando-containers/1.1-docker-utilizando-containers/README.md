@@ -13,4 +13,6 @@
 <li>Remover o container</li>
 </ul>
 
+<img src="backEnd/bloco-01-docker-utilizando-containers/1.1-docker-utilizando-containers/Captura de tela de 2023-03-16 10-16-04.png" alt="exercício realizado no terminal" />
+
 
