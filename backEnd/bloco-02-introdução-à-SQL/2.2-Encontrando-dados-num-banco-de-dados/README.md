@@ -36,5 +36,5 @@
 </li>
 </ul>
 
-<img src="" alt="atividade no terminal printada" />
+<img src="https://github.com/SamuelRocha91/trybe_atividades/blob/main/backEnd/bloco-02-introdu%C3%A7%C3%A3o-%C3%A0-SQL/2.2-Encontrando-dados-num-banco-de-dados/Captura%20de%20tela%20de%202023-03-19%2020-02-50.png?raw=true" alt="atividade no terminal printada" />
 
