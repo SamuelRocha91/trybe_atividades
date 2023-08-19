@@ -38,3 +38,14 @@ def custo_tinta(metros):
 
 print(custo_tinta(49))
 
+def tipo_de_triangulo(n1, n2, n3):
+    if n1 == n2 and n2 == n3:
+        print("Triângulo equilátero")
+    elif n1 == n2 or n1 == n3 or n2 == n3:
+        print("Triângulo isósceles")
+    else:
+        print("Triângulo escaleno")
+
+
+tipo_de_triangulo(3, 5, 3)
+
