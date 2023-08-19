@@ -71,3 +71,21 @@ def soma_num_int(n):
 
 print(soma_num_int(5))
 
+
+def preco_abastecer(litros, tipo):
+    gasolina = tipo == 'G'
+    if gasolina and litros > 20:
+        custo = (2.50 * 0.94) * litros
+        print(f"custo total de R${custo}")
+    elif gasolina and litros < 20:
+        custo = (2.50 * 0.96) * litros
+        print(f"custo total de R${custo}")
+    elif not gasolina and litros > 20:
+        custo = (1.90 * 0.95) * litros
+        print(f"custo total de R${custo}")
+    else:
+        custo = (1.90 * 0.97) * litros
+        print(f"custo total de R${custo}")
+
+preco_abastecer(21, 'A')
+
