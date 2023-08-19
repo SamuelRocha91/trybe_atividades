@@ -49,3 +49,12 @@ def tipo_de_triangulo(n1, n2, n3):
 
 tipo_de_triangulo(3, 5, 3)
 
+def menor_elemento(lista):
+    menor = lista[0]
+    for i in lista:
+        if i < menor:
+            menor = i
+    return menor
+
+print(menor_elemento([5, 9, 3, 19, 70, 8, 100, 2, 35, 27]))
+
