@@ -16,3 +16,16 @@ def imprimir_quadrado(n):
         print(n * '*')
 
 imprimir_quadrado(5)
+
+def mais_caracteres(lista):
+    count = 0
+    maior = ''
+    for i in lista:
+        if len(i) > count:
+            count = len(i)
+            maior = i
+    return maior
+
+print(mais_caracteres(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]))
+
+
