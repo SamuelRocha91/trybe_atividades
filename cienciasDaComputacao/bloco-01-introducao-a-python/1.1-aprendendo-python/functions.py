@@ -58,3 +58,11 @@ def menor_elemento(lista):
 
 print(menor_elemento([5, 9, 3, 19, 70, 8, 100, 2, 35, 27]))
 
+def triangulo_de_asteriscos(n):
+    if n <= 1:
+        print("O número deve ser maior que 1")
+    for num in range(1, n + 1):
+        print(num * "*")
+
+triangulo_de_asteriscos(5)
+
