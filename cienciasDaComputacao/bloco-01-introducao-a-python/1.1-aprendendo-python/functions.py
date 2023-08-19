@@ -28,4 +28,13 @@ def mais_caracteres(lista):
 
 print(mais_caracteres(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]))
 
+import math
+
+def custo_tinta(metros):
+    latas = math.ceil((metros / 3) / 16)
+    preco = latas * 80
+    custo_m2 = (latas, preco)
+    return custo_m2
+
+print(custo_tinta(49))
 
