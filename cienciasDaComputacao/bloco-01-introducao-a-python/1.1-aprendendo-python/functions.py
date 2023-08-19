@@ -66,3 +66,8 @@ def triangulo_de_asteriscos(n):
 
 triangulo_de_asteriscos(5)
 
+def soma_num_int(n):
+    return sum(range(1, n + 1))
+
+print(soma_num_int(5))
+
